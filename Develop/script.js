@@ -8,6 +8,7 @@ const numeric = '0123456789'.split('');
 const specialCharacter = '!@#$%^&*'.split('');
 const newList = [lowercase, uppercase, numeric, specialCharacter];
 
+// A function to prompt the user
 function promptUser(){
   var y = true
   while(y){
@@ -26,7 +27,8 @@ function promptUser(){
     }
   }
 }
-  
+
+// A function to generate the password
 function generatePassword (){
   var prompts = promptUser();
   var newBank = [];
