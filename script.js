@@ -45,7 +45,6 @@ function writePassword() {
   var newPassword = '';
   var password = generatePassword();
   var superNewPassword = password[0];
-  console.log(password[0]);
   for (i = 0; i < password[1]; i++){
     var random = Math.floor(Math.random() * password[0].length);
     newPassword = newPassword.concat(superNewPassword[random])
