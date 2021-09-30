@@ -27,4 +27,15 @@ function promptUser(){
   }
 }
   
+function generatePassword (){
+  var prompts = promptUser();
+  var newBank = [];
+  for (i = 0; i < newList.length; i++){
+    if (prompts[i]){
+      newBank = newBank.concat(newList[i])
+    }
+  }
+  return [newBank, prompts[0]]
+}
+
 
